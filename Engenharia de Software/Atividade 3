@@ -1,1 +1,11 @@
+Requisitos Não Funcionais (adjetivos) - Tarefas
+Evolutionary - evolução do programa
+Fault Tolerance - Tolerância a falha (um código estourar, e o resto estar funcionando ainda) (acoplamento)
+Modularidade - Sistema é particionado, ele é dividido (instalção do windows)
+Custo do Sistema - Custo como um todo
+Performance - desempenho, velocidade
+Confiabilidade - disponibilidade (servidor disponível a qualquer momento)
+Escalabilidade - carga de uso (100 pessoas usam ? 1000 usam ? 100000 usam ?)
+Simplicidade - facilidade de implementar, mao de obra, conhecimento
+Testar possibilidades de problemas que podem acontecer, tem varios tipos de testes (funcionamento da rede pode estragar o seu software)
 
