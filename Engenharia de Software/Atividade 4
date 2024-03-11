@@ -1,0 +1,18 @@
+A arquitetura do sistema deve ser projetada levando em consideração os tradeoffs entre os diversos requisitos não funcionais mencionados em aula, 
+tais como desempenho, escalabilidade, disponibilidade, segurança e custo.
+
+Por exemplo, ao pensar na escalabilidade do sistema, um tradeoff a ser considerado é a escolha entre arquiteturas monolíticas e microsserviços. 
+Uma arquitetura monolítica pode ser mais simples de implementar e manter, porém pode apresentar dificuldades para escalar horizontalmente, 
+especialmente em ambientes de nuvem. Por outro lado, uma arquitetura baseada em microsserviços pode ser mais escalável, mas exige um maior esforço 
+de desenvolvimento e manutenção.
+
+No que diz respeito à segurança, um tradeoff importante é entre a conveniência do usuário e a proteção dos dados. 
+Por exemplo, a adição de camadas de segurança, como autenticação de dois fatores ou criptografia de ponta a ponta, pode aumentar a segurança do sistema, 
+mas também pode tornar a experiência do usuário mais complexa.
+
+Além disso, o desempenho do sistema também é um fator crucial a ser considerado na arquitetura. 
+Tradeoffs entre a modularidade do código e a eficiência de comunicação entre os componentes podem surgir ao decidir entre uma arquitetura baseada 
+em microsserviços ou monolítica.
+
+Em resumo, ao debater tradeoffs com os requisitos não funcionais em mente, é importante encontrar um equilíbrio entre eles para garantir que a 
+arquitetura do sistema atenda às necessidades do negócio de forma eficiente e eficaz.
