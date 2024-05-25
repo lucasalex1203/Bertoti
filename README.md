@@ -121,8 +121,6 @@ O aplicativo de médico virtual descrito se encaixa na **Arquitetura de Microsse
 - **Custo Inicial**: Mais elevado devido à complexidade de definir interfaces e gerenciar a comunicação entre serviços, além do investimento em infraestrutura e ferramentas.
 - **Escalabilidade a Longo Prazo**: Reduz custos operacionais ao permitir que apenas os serviços necessários sejam dimensionados conforme a demanda aumenta.
 
-
-
   ## 2. Classes UML:
 
   # Classes Principais
@@ -139,8 +137,7 @@ MedicationRecommendation: Recomenda medicamentos com base nos dados do usuário 
 
 Consultation: Representa uma consulta realizada pelo usuário.
 
-![App Medico](https://github.com/lucasalex1203/Bertoti/assets/143049663/0d968fff-0c25-47ca-9c5d-df9c688c3235)
-
+![Diagrama sem nome](https://github.com/lucasalex1203/Bertoti/assets/143049663/42db2c2d-8df9-4156-bbb5-e73d4f190568)
 
  
   ## 3. Código Java:
