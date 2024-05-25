@@ -34,7 +34,60 @@ e adaptem o software de acordo com suas necessidades, e a complexidade do códig
 
 ## Atividade 3 - 01/03
 
-  ### 
+## Layered Architecture Style
+# Scalability = 1 x Overall Cost = 5
+
+•	Escalabilidade:
+o	Desvantagem: À medida que a demanda por escalabilidade aumenta, os custos podem subir devido à necessidade de otimizar a comunicação entre camadas
+
+•	Custo:
+o	Benefício: Inicialmente mais econômico em termos de desenvolvimento e implantação, 
+
+## Pipeline Architecture Style
+# Scability = 1 x Simplicity = 5
+
+•	Escalabilidade:
+o	Desvantagem: Limita a capacidade de escalabilidade e pode se tornar um gargalo em cenários de alta demanda, resultando em tempos de resposta mais lentos.
+
+•	Simplicidade:
+o	Benefício: Facilita o desenvolvimento, manutenção e entendimento do sistema.
+
+## Microkernel Architecture Style
+# Fault tolerance = 1 x Overall Cost = 5
+
+•	Tolerância a Falhas:
+o	Benefício: Ao isolar componentes essenciais no microkernel, a arquitetura de microkernel oferece maior tolerância a falhas. Se um plug-in falhar, o restante do sistema pode continuar operando
+
+•	Custo:
+o	Desvantagem: podem elevar o custo inicial de desenvolvimento e operacional devido à necessidade de definir interfaces claras e gerenciar a comunicação entre o microkernel e os plug-ins
+
+## Service-Based Architecture Style
+# Performance = 3 x Overall Cost = 4
+
+•	Performance:
+o	Desvantagem: Overhead de comunicação e necessidade de coordenação podem afetar negativamente o desempenho.
+
+•	Custo:
+o	Benefício: Economia de recursos e flexibilidade de implantação reduzem os custos operacionais.
+
+## Event-Driven Architecture Style
+# Simplicity = 1 e Fault tolerance = 5
+
+•	Simplicidade:
+o	Desvantagem: falta de mecanismos robustos de detecção, recuperação podem tornar o sistema vulnerável a interrupções.
+
+•	Tolerância a Falhas:
+o	Vantagem: Um sistema tolerante a falhas é capaz de continuar operando mesmo quando ocorrem falhas em seus componentes.
+
+## Microservices Architecture
+# Overall Cost = 1 e Scability = 5
+
+•	Custo:
+o	Desvantagem: custos de desenvolvimento e infraestrutura podem ser altos devido à complexidade de implementação, necessidade de automação e ferramentas de monitoramento.
+
+•	Escalabilidade:
+o	Vantagem: permite que cada serviço seja dimensionado de forma independente conforme necessário, o que melhora a capacidade de resposta e a resiliência do sistema.
+
 
 ## Atividade 4 - 25/03
 Pensar em uma aplicação, onde terá que: definir a arquitetura, definir as classes UML, realizar um código java e testar.
@@ -54,37 +107,46 @@ Pensar em uma aplicação, onde terá que: definir a arquitetura, definir as cla
   É importante ressaltar que este aplicativo não substitui uma consulta médica profissional, sendo apenas uma ferramenta para auxiliar. Assim como na engenharia elétrica, onde existem programas que facilitam a elaboração de projetos, mas não substituem a experiência e o conhecimento dos engenheiros, este aplicativo é uma ferramenta complementar aos serviços médicos tradicionais.
 
   ## 1. Definição da Arquitetura:
-  
-Arquitetura de Microservices: Pode ser benéfica devido à modularidade e escalabilidade. Cada funcionalidade (como o questionário de saúde, o bulário, etc.) pode ser um serviço separado, comunicando-se através de APIs.
+O aplicativo de médico virtual descrito se encaixa na **Arquitetura de Microsserviços** 
 
-Banco de Dados: Será necessário um banco de dados para armazenar informações do usuário, sintomas, doenças, remédios, etc. Um banco de dados relacional (MySQL) pode ser usado para estruturas complexas de dados.
+- **Modularidade**: Divisão do aplicativo em serviços independentes (biblioteca médica, questionário de saúde, consulta de sintomas, recomendação de medicamentos, dados do usuário, integração com profissionais de saúde).
+- **Escalabilidade**: Cada serviço pode ser escalado individualmente conforme necessário, melhorando a capacidade de resposta durante períodos de alta demanda.
+- **Desenvolvimento Independente**: Diferentes equipes podem trabalhar simultaneamente em diferentes serviços, acelerando o desenvolvimento.
+- **Tecnologias Diferentes**: Cada serviço pode usar a tecnologia mais adequada para sua função específica.
+- **Resiliência**: Falhas em um serviço não afetam diretamente os outros, garantindo maior disponibilidade do sistema.
+- **Flexibilidade e Manutenibilidade**: Facilita a adição e modificação de funcionalidades sem impactar o sistema inteiro.
+
+### Trade-off entre Custo e Escalabilidade
+
+- **Custo Inicial**: Mais elevado devido à complexidade de definir interfaces e gerenciar a comunicação entre serviços, além do investimento em infraestrutura e ferramentas.
+- **Escalabilidade a Longo Prazo**: Reduz custos operacionais ao permitir que apenas os serviços necessários sejam dimensionados conforme a demanda aumenta.
+
+
 
   ## 2. Classes UML:
 
-Usuário: Armazena informações do usuário, como peso, idade, sexo, tipo sanguíneo, etc.
+  # Classes Principais
 
-Sintoma: Descreve um sintoma e suas características.
+User: Representa o usuário do aplicativo.
 
-Doença: Representa uma doença com seus sintomas associados e tratamentos.
+HealthData: Armazena dados de saúde do usuário.
 
-Remédio: Informações sobre remédios, como bula, contra-indicações, etc.
+SymptomChecker: Realiza consultas baseadas em sintomas.
 
-Consulta: Registra consultas realizadas pelo usuário, incluindo sintomas relatados e diagnósticos sugeridos.
+MedicalLibrary: Contém informações sobre doenças, sintomas e tratamentos.
+
+MedicationRecommendation: Recomenda medicamentos com base nos dados do usuário e nos sintomas.
+
+Consultation: Representa uma consulta realizada pelo usuário.
+
+![App Medico](https://github.com/lucasalex1203/Bertoti/assets/143049663/0d968fff-0c25-47ca-9c5d-df9c688c3235)
+
+
  
   ## 3. Código Java:
-Implementar classes para representar cada entidade mencionada acima.
 
-Criar métodos para buscar informações sobre doenças, sintomas, remédios, etc., e para conduzir consultas de acordo com os sintomas relatados pelo usuário.
-
-Desenvolver a lógica para filtrar remédios com base nas informações do usuário (pressão, glicemia, gravidez, etc.).
-
-Criar uma interface de usuário para interagir com o aplicativo.
  
   ## 4. Testes:
 
-Escrever casos de teste para garantir que a lógica de diagnóstico e recomendação de tratamento funcione corretamente.
 
-Testar a integração entre os diferentes serviços do aplicativo.
-
-Testar a interface do usuário para garantir que seja amigável e responsiva.
   
