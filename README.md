@@ -1,5 +1,5 @@
 # Bertoti
-## Atividade 1 - 19/02
+## Atividade 1
 
   ### Realize um comentário baseado nos parágrafos abaixo:
   
@@ -18,7 +18,7 @@ Na engenharia de software, os profissionais precisam considerar não apenas o de
 além de dimensionar as decisões com base em estimativas imprecisas de tempo e crescimento. Nada em engenharia de software é mágica. 
 É interessante observar como a programação é parte essencial da engenharia de software, mas não a resume por completo, já que envolve aspectos mais amplos e complexos.
 
-## Atividade 2 - 26/02 
+## Atividade 2
 
   ### De 3 exemplos de trade-off em softwares e explicá-los.
   1. Usabilidade vs. Segurança: Um trade-off comum em softwares é entre a usabilidade, tornando o software fácil e intuitivo para os usuários, e a segurança, 
@@ -32,7 +32,7 @@ mas também pode exigir mais recursos computacionais.
   3. Flexibilidade vs. Complexidade: Ao projetar um software, os desenvolvedores podem encontrar um trade-off entre a flexibilidade do sistema, permitindo que os usuários personalizem 
 e adaptem o software de acordo com suas necessidades, e a complexidade do código subjacente. Adicionar muitas opções de personalização pode tornar o software mais complexo e difícil de manter.
 
-## Atividade 3 - 01/03
+## Atividade 3 
 
 ## Layered Architecture Style
 # Scalability = 1 x Overall Cost = 5
@@ -89,7 +89,7 @@ o	Desvantagem: custos de desenvolvimento e infraestrutura podem ser altos devido
 o	Vantagem: permite que cada serviço seja dimensionado de forma independente conforme necessário, o que melhora a capacidade de resposta e a resiliência do sistema.
 
 
-## Atividade 4 - 25/03
+## Atividade 4
 Pensar em uma aplicação, onde terá que: definir a arquitetura, definir as classes UML, realizar um código java e testar.
 
 ### Idéia 
